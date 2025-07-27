@@ -50,6 +50,11 @@
       </feature>
     </config-file>
 
+          <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+                  <application android:icon="@mipmap/ic_launcher" 
+                               android:roundIcon="@mipmap/ic_launcher_round"/>
+          </edit-config>
+
     <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
 
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
